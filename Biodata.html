@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>बायोडाटा - विक्रम कुमार</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fbbf24;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .card {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fbbf24;
+            border: 4px solid black;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .personal-info,
+        .photo-work {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .info-item {
+            margin-bottom: 10px;
+        }
+
+        .info-item strong {
+            margin-right: 10px;
+        }
+
+        .photo {
+            text-align: center;
+            margin-bottom: 20px;
+            transform: translateY(20px);
+        }
+
+        .photo img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .work-details {
+            border: 2px solid #ef4444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .section-title {
+            background-color: #bbf7d0;
+            padding: 10px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .section-title~p {
+            text-align: center;
+        }
+
+        .family-members,
+        .address {
+            margin-top: 20px;
+        }
+
+        .siblings {
+            padding-left: 20px;
+        }
+
+        .siblings li {
+            margin-bottom: 10px;
+        }
+
+        .address-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .address-column {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .mobile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .mobile>img {
+            width: 200px;
+        }
+
+        @media (max-width: 600px) {
+
+            .main-content,
+            .address-grid {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <header class="header">
+            <img src="./god.png" alt="">
+            <h1>बायोडाटा</h1>
+        </header>
+        <main>
+            <div class="main-content">
+                <div class="personal-info">
+                    <div class="info-item" style="color: #16a34a;"><strong>नाम:</strong> विक्रम कुमार</div>
+                    <div class=" info-item"><strong>धर्म:</strong> हिंदू</div>
+                    <div class="info-item"><strong>जाति:</strong> सुढी</div>
+                    <div class="info-item"><strong>भोजन:</strong> शाकाहारी</div>
+                    <div class="info-item"><strong>जन्मतिथि:</strong> 28 नवंबर 1996</div>
+                    <div class="info-item"><strong>रंग:</strong> मध्यम सफेद</div>
+                    <div class="info-item"><strong>ऊंचाई:</strong> 6'0''</div>
+                    <div class="info-item">
+                        <strong>शिक्षा:</strong>
+                        <ul>
+                            <li>बी.टेक (सिविल), आई.आई.टी.आर.ए.एम. अहमदाबाद</li>
+                            <li>12वीं (सीबीएसई) - 83%</li>
+                            <li>10वीं (सीबीएसई) - 9.2 सीजीपीए</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="photo-work">
+                    <div class="photo">
+                        <img src="./profile.png" alt="विक्रम कुमार की तस्वीर" width="240" height="300">
+                    </div>
+                    <div class="work-details">
+                        <h2>कार्य विवरण:</h2>
+                        <p>
+                            कनिष्ठ अभियंता (सिविल)<br>
+                            दक्षिण मध्य रेलवे<br>
+                            पता - द्वितीय तल, संचालन भवन,<br>
+                            रेल निलयम रोड, सिकंदराबाद,<br>
+                            तेलंगाना - 500025
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="family-members">
+                <h2 class="section-title">परिवार के सदस्य</h2>
+                <p>वैष्णव परिवार</p>
+                <div class="info-item"><strong>माता का नाम:</strong> मीना कुमारी</div>
+                <div class="info-item"><strong>माता का व्यवसाय:</strong> सहायक शिक्षक (बिहार सरकार)</div>
+                <div class="info-item"><strong>पिता का नाम:</strong> अरुण कुमार महतो</div>
+                <div class="info-item"><strong>पिता का व्यवसाय:</strong> सहायक शिक्षक (बिहार सरकार)</div>
+                <div class="info-item"><strong>दादा का नाम:</strong> स्वर्गीय महाबीर महतो</div>
+                <div class="info-item"><strong>दादा का व्यवसाय:</strong> सेवानिवृत्त उप प्राचार्य, शिक्षक प्रशिक्षण
+                    विद्यालय</div>
+                <ol class="siblings">
+                    <li>
+                        <strong>प्रियंका देव मंडल (बड़ी बहन)</strong> - उद्यमी और गृहिणी<br>
+                        गगन देव मंडल (जीजाजी) - आयकर निरीक्षक, ठाणे, महाराष्ट्र
+                    </li>
+                    <li>
+                        <strong>छाया रानी (बड़ी बहन)</strong> - गृहिणी<br>
+                        राजीव कुमार (जीजाजी) - कार्यकारी अभियंता, दामोदर घाटी निगम, पश्चिम बंगाल
+                    </li>
+                    <li>
+                        <strong>चांदनी कुमारी (बड़ी बहन)</strong> - बी.एड की पढ़ाई कर रही हैं और गृहिणी<br>
+                        रंजीत कुमार (जीजा) - बैंक मैनेजर, प्रथमा यूपी ग्रामीण बैंक, यूपी
+                    </li>
+                    <li>
+                        <strong>धीरज कुमार (बड़े भाई)</strong> - सॉफ्टवेयर अभियंता, आयोटेट इन्फोटेक, नई दिल्ली<br>
+                        रौशनी कुमारी (भाभी) – बी.एड की पढ़ाई कर रही है और गृहिणी
+                    </li>
+                </ol>
+            </div>
+            <div class="address">
+                <h2 class="section-title">पता</h2>
+                <div class="address-grid">
+                    <div class="address-column">
+                        <h3>नगर-</h3>
+                        <p>
+                            महाबीर निवास, चाणक्यपुरी<br>
+                            मेला रोड, वार्ड नंबर 12<br>
+                            सीतामढ़ी, बिहार-843302
+                        </p>
+                    </div>
+                    <div class="address-column">
+                        <h3>गांव-</h3>
+                        <p>
+                            ग्राम+थाना-कन्हौली<br>
+                            वाया-भुतही<br>
+                            सीतामढ़ी, बिहार-843317
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile">
+                मोबाइल : 9599014835
+                <img src="./footer.png" alt="">
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
